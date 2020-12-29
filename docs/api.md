@@ -152,7 +152,7 @@ GET /leagues/example-bball-league/games/a5a4e5e
 Players record a box score for each game. Custom per sport.
 
 ```
-/leagues/{league}/games/players/{playerId}
+/leagues/{league}/games/{gameId}/players/{playerId}
 ```
 
 ## Basketball
@@ -174,3 +174,24 @@ Players record a box score for each game. Custom per sport.
 * flagrant one fouls
 * flagrant two fouls
 
+```
+GET /leagues/example-bball-league/players/joe-smith/games/a5a4e5e
+
+{
+  "assists": 7,
+  "offensive_rebounds": 3,
+  "defensive_rebounds": 6,
+  "free_throws_attempted": 10,
+  "free_throws_made": 9,
+  "two_point_fg_attempted": 8,
+  "two_point_fg_made": 7,
+  "three_point_fg_made": 4,
+  "three_point_fg_attempted": 2,
+  "minutes": 36,
+  "turnovers": 2,
+  "technical_fouls": 0,
+  "personal_fouls": 3,
+  "flagrant_one_fouls": 0,
+  "flagrant_two_fouls": 0
+}
+```
