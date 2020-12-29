@@ -19,6 +19,15 @@ Leagues are managed independently.
 * name
 * sport
 
+```
+GET /leagues/example-bball-league
+
+{
+  "sport": "basketball",
+  "name": "Example Basketball League"
+}
+```
+
 # Arenas
 
 Locations where the games are played.
@@ -33,6 +42,18 @@ Locations where the games are played.
 * state
 * country
 
+```
+GET /leagues/example-bball-league/arenas/club-arena
+
+{
+  "name": "Club Arena",
+  "street": "472 Gametime Avenue",
+  "city": "Dover",
+  "state": "Delaware",
+  "country": "USA"
+}
+```
+
 # Teams
 
 Teams combine players and participate in games.
@@ -42,6 +63,15 @@ Teams combine players and participate in games.
 ```
 
 * name
+
+```
+GET /leagues/example-bball-league/teams/red-team
+
+{
+  "name": "Red Team"
+}
+```
+
 
 # Players
 
@@ -57,6 +87,19 @@ Players attach to teams and participate in games.
 * weight
 * birthdate
 
+```
+GET /leagues/example-bball-league/players/joe-smith
+
+{
+  "first_name": "Joe",
+  "last_name": "Smith",
+  "height": 64,
+  "weight": 190,
+  "birthdate": 09-01-1995
+}
+```
+
+
 # Coaches
 
 Coaches attach to teams and participate as game leaders.
@@ -68,6 +111,16 @@ Coaches attach to teams and participate as game leaders.
 * first name
 * last name
 * birthdate
+
+```
+GET /leagues/example-bball-league/players/greg-doe
+
+{
+  "first_name": "Greg",
+  "last_name": "Doe",
+  "birthdate": 10-12-1989
+}
+```
 
 # Games
 
@@ -81,6 +134,18 @@ Games are a combination of teams and a single arena.
 * home team
 * away team
 * datetime
+
+```
+GET /leagues/example-bball-league/games/a5a4e5e
+
+{
+  "id": "a5a4e5e",
+  "home_team": "Red Team",
+  "away_team": "Blue Team",
+  "datetime": 08-18-2020 16:00:00
+}
+```
+
 
 # Scores
 
