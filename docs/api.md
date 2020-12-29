@@ -1,12 +1,12 @@
 # SportsLeague API
 
-* leagues
-* arenas
-* teams
-* players
-* coaches
-* games
-* scores
+* [leagues](#leagues)
+* [arenas](#arenas)
+* [teams](#teams)
+* [players](#players)
+* [coaches](#coaches)
+* [games](#games)
+* [scores](#scores)
 
 # Leagues
 
