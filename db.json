@@ -1,0 +1,48 @@
+{
+  "leagues": [
+    { "id": 1, "sport": "basketball", "name": "example_basketball_league", "long_name": "Example Basketball League" },
+    { "id": 2, "sport": "baseball", "name": "example_baseball_league", "long_name": "Example Baseball League" },
+    { "id": 3, "sport": "hockey", "name": "example_hockey_league", "long_name": "Example Hockey League" }
+  ],
+  "arenas": [
+    { "id": 1, "name": "Club Arena", "street": "472 Gametime Avenue", "city": "Dover", "state": "Delaware", "country": "USA" },
+    { "id": 2, "name": "Genos Sub Arena", "street": "90 Genos Ave", "city": "Philadelphia", "state": "Pennsylvania", "country": "USA" }
+  ],
+  "teams": [
+    { "id": 1, "name": "Blue Team", "arena": "Genos Sub Arena" },
+    { "id": 2, "name": "Red Team", "arena": "Club Arena" }
+  ],
+  "players": [
+    { "id": 1, "first_name": "Joe", "last_name": "Smith", "height": 64, "weight": 190, "birthdate": "09-01-1995" },
+    { "id": 2, "first_name": "Greg", "last_name": "Mendoza", "height": 68, "weight": 195, "birthdate": "02-09-1994" }
+  ],
+  "coaches": [
+    { "id": 1, "first_name": "Sal", "last_name": "Jones", "birthdate": "03-23-1984" }
+  ],
+  "games": [
+    { "id": 1, "game_id": "a5a4e5e", "home_team": "Blue Team", "away_team": "Red Team", "arena": "Genos Sub Arena", "datetime": "08-18-2020 16:00:00" },
+    { "id": 2, "game_id": "935506f", "home_team": "Blue Team", "away_team": "Red Team", "arena": "Genos Sub Arena", "datetime": "08-19-2020 16:00:00" }
+  ],
+  "scores_basketball": [
+    {
+      "id": 1,
+      "player": "Joe Smith",
+      "game": "a5a4e5e",
+      "assists": 7,
+      "offensive_rebounds": 3,
+      "defensive_rebounds": 6,
+      "free_throws_attempted": 10,
+      "free_throws_made": 9,
+      "two_point_fg_attempted": 8,
+      "two_point_fg_made": 7,
+      "three_point_fg_made": 4,
+      "three_point_fg_attempted": 2,
+      "minutes": 36,
+      "turnovers": 2,
+      "technical_fouls": 0,
+      "personal_fouls": 3,
+      "flagrant_one_fouls": 0,
+      "flagrant_two_fouls": 0
+    }
+  ]
+}
