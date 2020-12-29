@@ -16,6 +16,7 @@ Leagues are managed independently.
 /leagues/{league}
 ```
 
+* id
 * name
 * sport
 
@@ -23,6 +24,7 @@ Leagues are managed independently.
 GET /leagues/example-bball-league
 
 {
+  "id": "example_bball_league",
   "sport": "basketball",
   "name": "Example Basketball League"
 }
